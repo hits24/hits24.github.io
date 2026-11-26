@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hitashri Patil – Software Engineer</title>
+<meta name="description" content="Hitashri Patil, Software Engineer at Deutsche Bank, Pune. Java, Spring Boot, GraphQL and Oracle SQL.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bar"></div>
+<canvas id="net" aria-hidden="true"></canvas>
+<div id="glow" aria-hidden="true"></div>
+
+<header id="nav">
+  <a href="#top" class="logo">Hitashri Patil</a>
+  <button id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  <nav id="links">
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact" class="pill">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-text">
+    <p class="muted">Pune, India</p>
+    <h1>Hitashri<br>Patil</h1>
+    <p class="role">Software Engineer at Deutsche Bank</p>
+    <p class="lead">I build Java and Spring Boot backends, REST APIs and GraphQL services for enterprise banking.</p>
+    <div class="cta">
+      <a class="btn primary" href="#experience">See my work</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+  </div>
+  <div class="console" aria-label="Profile as an API response">
+    <div class="bar-top"><i></i><i></i><i></i><span>GET /engineers/hitashri-patil</span></div>
+    <pre id="json"></pre>
+  </div>
+</section>
+
+<section class="stats">
+  <div><b data-n="200" data-s="+">0</b><span>business rules mocked in the Rule Amendment System</span></div>
+<div><b data-n="8" data-s=" M+">0</b><span>records processed for Enterprise-scale securities position movement analytics</span></div>  <div><b data-n="90" data-s="%+">0</b><span>JUnit coverage on analytics and internship work</span></div>
+  <div><b data-n="4" data-s="">0</b><span>different types of government IDs data extracted automatically with OCR</span></div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="timeline">
+    <article class="job reveal">
+      <div class="when">July 2024 – Present</div>
+      <h3>Software Engineer</h3>
+      <p class="org">Deutsche Bank, Pune</p>
+      <div class="proj">
+        <h4>Rule Amendment System</h4>
+        <p class="tags">Java · Spring Boot · JDBC · Oracle SQL · JUnit · Swagger</p>
+        <ul>
+          <li>Engineered a Spring Boot screen for mocking 200+ business rules, with a toggle between original and mocked versions and persistence to Oracle SQL without executing the rule.</li>
+          <li>Delivered 3 REST APIs to load existing mock rules, load an original rule available for mocking, and create or edit a rule through one unified endpoint, backed by Oracle SQL via Spring JdbcTemplate.</li>
+          <li>Established versioning where edits update the same rule ID until execution, then fork a new mock version that preserves history. Added Swagger docs, logging, and 85%+ JUnit coverage in production.</li>
+        </ul>
+      </div>
+      <div class="proj">
+        <h4>Securities Position Movement Analytics</h4>
+        <p class="tags">Java · Spring Boot · Elide · GraphQL · Oracle SQL · JUnit</p>
+        <ul>
+          <li>Designed backend services to visualize the previous day’s securities position movements, collaborating with stakeholders to flag reportable positions before regulatory threshold breaches.</li>
+          <li>Constructed 5 backend APIs (3 cascading filters, 2 analytics) and integrated Elide with GraphQL to expose enterprise data for React dashboards.</li>
+          <li>Optimized Oracle SQL queries for historical position data and achieved 90%+ JUnit coverage, reducing regression defects.</li>
+        </ul>
+      </div>
+    </article>
+    <article class="job reveal">
+      <div class="when">December 2023 – May 2024</div>
+      <h3>Software Development Intern</h3>
+      <p class="org">DocBoyz, Pune</p>
+      <p class="tags">Python · Flask · PyTesseract · EasyOCR</p>
+      <ul>
+        <li>Implemented RESTful Python/Flask APIs that automated data extraction from 4 government-issued IDs (Aadhaar, PAN, Passport, Voter ID) using PyTesseract and EasyOCR, replacing manual entry.</li>
+        <li>Streamlined OCR workflows converting unstructured output into standardized JSON, with preprocessing and validation to improve accuracy across 2 document formats (scanned images and PDFs).</li>
+      </ul>
+    </article>
+    <article class="job reveal">
+      <div class="when">June 2023 – July 2023</div>
+      <h3>Technology Analyst Intern</h3>
+      <p class="org">Deutsche Bank, Pune</p>
+      <p class="tags">Java · Spring Boot · JUnit</p>
+      <ul>
+        <li>Built 3 RESTful APIs for loading records, updating status, and saving data using Java and Spring Boot for enterprise banking applications.</li>
+        <li>Authored unit tests using JUnit reaching 90%+ coverage to improve software reliability and maintainability.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Technical skills</h2>
+  <div class="grid4">
+    <div class="card reveal"><h3>Languages</h3><p class="chips"><span>Java</span><span>Python</span><span>SQL</span><span>Golang</span><span>C</span></p></div>
+    <div class="card reveal"><h3>Backend &amp; APIs</h3><p class="chips"><span>Spring Boot</span><span>Flask</span><span>REST APIs</span><span>GraphQL</span><span>Elide</span><span>JDBC</span><span>Swagger/OpenAPI</span></p></div>
+    <div class="card reveal"><h3>Databases, testing &amp; tools</h3><p class="chips"><span>Oracle SQL</span><span>JUnit</span><span>Google Cloud Platform (GCP)</span><span>Git</span><span>Bitbucket</span><span>Jira</span><span>TeamCity</span><span>IntelliJ IDEA</span><span>VS Code</span><span>PuTTY</span><span>WinSCP</span></p></div>
+    <div class="card reveal"><h3>Concepts</h3><p class="chips"><span>Data Structures &amp; Algorithms</span><span>Object-Oriented Programming</span><span>SDLC</span><span>Agile Methodology</span><span>API Design</span></p></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid2">
+    <article class="card tilt reveal">
+      <h3>Face Recognition Attendance System</h3>
+      <p class="tags">Python · OpenCV · Tkinter</p>
+      <ul>
+        <li>Created an automated attendance system using OpenCV facial recognition for real-time identification, with a Tkinter desktop interface. It handled 90+ students’ data.</li>
+        <li>Applied image preprocessing and recognition tuning to improve identification reliability and remove manual roll-call.</li>
+      </ul>
+    </article>
+    <article class="card tilt reveal">
+      <h3>Multi-format Video Steganography</h3>
+      <p class="tags">Python · AES-256 · RSA</p>
+      <ul>
+        <li>Devised an application concealing 4 data types (text, image, audio, video) within a single video, secured with AES-256 and RSA encryption.</li>
+        <li>Developed matching encode and decode pipelines so all 4 data types could be hidden in and fully recovered from the carrier video.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education &amp; recognition</h2>
+  <div class="grid3">
+    <div class="card reveal"><h3>Education</h3><p class="big">B.Tech, Information Technology</p><p>Vishwakarma Institute of Technology, Pune</p><p class="tags">2020 – 2024 · CGPA 8.77/10</p></div>
+    <div class="card reveal"><h3>Achievement</h3><p class="big">Spot Award, Deutsche Bank</p><p>For timely delivery of 2 enterprise features (Rule Amendment and Securities Analytics), recognized by stakeholders.</p></div>
+    <div class="card reveal"><h3>Hackathons</h3><ul class="plain"><li>Smart India Hackathon (2022)</li><li>Web-D-Verse Hackathon (2022)</li><li>Deutsche Bank 24-Hour Hackathon (2025)</li></ul></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Let’s talk</h2>
+  <a class="mail" href="mailto:hitashripatil24@gmail.com">hitashripatil24@gmail.com</a>
+  <div class="cta">
+    <a class="btn" href="tel:+918308349125">+91-8308349125</a>
+    <a class="btn" href="https://github.com/hits24" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://linkedin.com/in/hitashri-patil" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</section>
+</main>
+<footer>© <span id="yr"></span> Hitashri Patil</footer>
+<script src="script.js"></script>
+</body>
+</html>
